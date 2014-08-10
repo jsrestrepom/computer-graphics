@@ -50,15 +50,15 @@ public class ComputerGraphicsRepository
         jumpToNextSection(aScanner);
         jumpToNextSection(aScanner);
         List<Edge> edges = new LinkedList<Edge>();
-        Point aPoint, bPoint;
+        Point initialPoint, finalPoint;
         try
         {
             int nEdges = aScanner.nextInt();
             for (int i = 0; i < nEdges; i++)
             {
-                aPoint = aVertexList.get(aScanner.nextInt());
-                bPoint = aVertexList.get(aScanner.nextInt());
-                edges.add(new Edge(aPoint, bPoint));
+                initialPoint = aVertexList.get(aScanner.nextInt());
+                finalPoint = aVertexList.get(aScanner.nextInt());
+                edges.add(new Edge(initialPoint, finalPoint));
             }
         } catch (InputMismatchException e)
         {

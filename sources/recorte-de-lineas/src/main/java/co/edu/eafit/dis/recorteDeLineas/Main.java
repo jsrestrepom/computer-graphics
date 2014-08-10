@@ -1,23 +1,18 @@
 package co.edu.eafit.dis.recorteDeLineas;
 
-import co.edu.eafit.dis.computherGraphicsAlgorithms.DrawGraphics2DAdapter;
-import co.edu.eafit.dis.core.*;
-import co.edu.eafit.dis.core.Point;
-
 import javax.swing.*;
 import java.awt.*;
-import java.util.*;
-import java.util.List;
 
-public class Main extends JPanel {
+public class Main extends JPanel
+{
 
     /*
-     * En esta función se dibuja.
-     * La función es llamada por Java2D.
-     * Se recibe una variable Graphics, que contiene la información del contexto
-     * gráfico.
-     * Es necesario hacerle un cast a Graphics2D para trabajar en Java2D.
-     */
+         * En esta función se dibuja.
+         * La función es llamada por Java2D.
+         * Se recibe una variable Graphics, que contiene la información del contexto
+         * gráfico.
+         * Es necesario hacerle un cast a Graphics2D para trabajar en Java2D.
+         */
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -32,13 +27,10 @@ public class Main extends JPanel {
         int w = size.width - insets.left - insets.right;
         int h = size.height - insets.top - insets.bottom;
 
-        pintarRecorteDeLineas(g2d, w, h);
-    }
-
-    private void pintarRecorteDeLineas(Graphics2D g2d, int w, int h) {
-        String aFilePath = "";
-        List<Point> aVertexList = ComputerGraphicsRepository.getVertexFromFile(aFilePath);
-        List<Edge> aEdgeList = ComputerGraphicsRepository.getEdgesFromFile(aFilePath, aVertexList);
+        RecorteDeLineas rdl = new RecorteDeLineas();
+        rdl.init(g2d, w, h);
+        rdl.leerEspecificaciones();
+        rdl.make();
     }
 
     public static void main(String[] args) {

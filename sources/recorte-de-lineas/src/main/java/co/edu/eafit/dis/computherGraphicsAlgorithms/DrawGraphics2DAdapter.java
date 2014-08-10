@@ -23,4 +23,8 @@ public class DrawGraphics2DAdapter implements DrawServiceAdapter
         }
     }
 
+    public void draw(Point initialPoint, Point finalPoint) {
+        g2d.drawLine(initialPoint.getX(), initialPoint.getY(), finalPoint.getX(), finalPoint.getY());
+    }
+
 }

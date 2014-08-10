@@ -2,19 +2,20 @@ package co.edu.eafit.dis.core;
 
 public class Edge
 {
-    private Point aPoint;
-    private Point bPoint;
+    private Point initialPoint;
+    private Point finalPoint;
 
-    public Edge(Point aPoint, Point bPoint) {
-        this.aPoint = aPoint;
-        this.bPoint = bPoint;
+    public Edge(Point initialPoint, Point finalPoint) {
+        this.initialPoint = initialPoint;
+        this.finalPoint = finalPoint;
     }
 
-    public Point getAPoint() {
-        return aPoint;
+    public Point getInitialPoint() {
+        return initialPoint;
     }
 
-    public Point getBPoint() {
-        return bPoint;
+    public Point getFinalPoint() {
+        return finalPoint;
     }
+
 }
