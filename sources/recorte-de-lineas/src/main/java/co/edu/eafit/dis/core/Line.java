@@ -1,4 +1,4 @@
-package co.edu.eafit.dis.computherGraphicsAlgorithms;
+package co.edu.eafit.dis.core;
 
 import java.util.LinkedList;
 import java.util.List;

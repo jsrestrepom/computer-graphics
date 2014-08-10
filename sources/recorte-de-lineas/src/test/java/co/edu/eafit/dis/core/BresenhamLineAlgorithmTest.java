@@ -1,17 +1,16 @@
-package co.edu.eafit.dis.segmentoDeLineas;
+package co.edu.eafit.dis.core;
 
-import static org.junit.Assert.*;
-
-import co.edu.eafit.dis.computherGraphicsAlgorithms.Line;
-import co.edu.eafit.dis.computherGraphicsAlgorithms.Point;
 import org.junit.Test;
 
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 public final class BresenhamLineAlgorithmTest
 {
 
-    @Test public void simple_draw()
+    @Test
+    public void simple_draw()
     {
         // Arrange
         Point anInitialPoint = new Point(0, 0);
@@ -27,7 +26,8 @@ public final class BresenhamLineAlgorithmTest
         assertEquals(expectedPoint.getY(), actualPoint.getY());
     }
 
-    @Test public void drawing_a_line_with_one_point()
+    @Test
+    public void drawing_a_line_with_one_point()
     {
         // Arrange
         Point anInitialPoint = new Point(10, 10);
@@ -41,7 +41,8 @@ public final class BresenhamLineAlgorithmTest
         assertEquals(expectedSize, aLinePoints.size());
     }
 
-    @Test public void switch_a_point_to_a_octant_twice_its_the_same_point()
+    @Test
+    public void switch_a_point_to_a_octant_twice_its_the_same_point()
     {
         // Arrange
         Point somePoint = new Point(-10, -10);

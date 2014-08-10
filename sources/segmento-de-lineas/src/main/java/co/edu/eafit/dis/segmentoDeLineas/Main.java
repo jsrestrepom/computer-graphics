@@ -1,8 +1,9 @@
 package co.edu.eafit.dis.segmentoDeLineas;
 
-import co.edu.eafit.dis.computherGraphicsAlgorithms.DrawService;
-import co.edu.eafit.dis.computherGraphicsAlgorithms.Line;
-import co.edu.eafit.dis.computherGraphicsAlgorithms.Point;
+import co.edu.eafit.dis.computherGraphicsAlgorithms.DrawGraphics2DAdapter;
+import co.edu.eafit.dis.core.DrawService;
+import co.edu.eafit.dis.core.Line;
+import co.edu.eafit.dis.core.Point;
 
 import java.awt.Color;
 import java.awt.Dimension;
