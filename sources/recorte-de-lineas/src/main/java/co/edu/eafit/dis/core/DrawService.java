@@ -1,8 +1,5 @@
 package co.edu.eafit.dis.core;
 
-import co.edu.eafit.dis.core.transformations.ReflectionTransformation;
-import co.edu.eafit.dis.core.transformations.TranslationTransformation;
-
 public class DrawService
 {
     private DrawServiceAdapter aDrawServiceAdapter;
@@ -16,7 +13,10 @@ public class DrawService
     }
 
     public void drawEdge(Edge anEdge) {
-        aDrawServiceAdapter.draw(anEdge.getInitialPoint(), anEdge.getFinalPoint());
+        if (anEdge.isInsideClippingArea())
+        {
+            aDrawServiceAdapter.draw(anEdge.getInitialPoint(), anEdge.getFinalPoint());
+        }
     }
 
 }

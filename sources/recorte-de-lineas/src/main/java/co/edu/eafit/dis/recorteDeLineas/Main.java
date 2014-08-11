@@ -17,7 +17,6 @@ public class Main extends JPanel
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;
-        g2d.setColor(Color.BLUE);
 
         // size es el tamaño de la ventana.
         Dimension size = getSize();
@@ -41,7 +40,7 @@ public class Main extends JPanel
         // Agregar un JPanel que se llama Main (esta clase)
         frame.add(new Main());
         // Asignarle tamaño
-        frame.setSize(500, 500);
+        frame.setSize(600, 600);
         // Poner el frame en el centro de la pantalla
         frame.setLocationRelativeTo(null);
         // Mostrar el frame
