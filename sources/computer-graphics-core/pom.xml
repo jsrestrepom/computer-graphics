@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>co.edu.eafit.dis.jrestr76</groupId>
-    <artifactId>recorte-de-lineas</artifactId>
+    <artifactId>computer-graphics-core</artifactId>
     <version>1.0.0</version>
 
     <properties>
@@ -14,16 +14,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>co.edu.eafit.dis.jrestr76</groupId>
-            <artifactId>computer-graphics-core</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>

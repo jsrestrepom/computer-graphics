@@ -1,10 +1,10 @@
 package co.edu.eafit.dis.core;
 
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 import java.util.List;
-
-import static org.junit.Assert.assertEquals;
 
 public final class BresenhamLineAlgorithmTest
 {

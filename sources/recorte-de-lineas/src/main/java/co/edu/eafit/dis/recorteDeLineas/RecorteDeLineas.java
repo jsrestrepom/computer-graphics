@@ -46,8 +46,8 @@ public class RecorteDeLineas
          * */
         String fullPath = "E:\\_code\\repo-git\\computer-graphics\\sources\\recorte-de-lineas\\src\\main\\resources\\co\\edu\\eafit\\dis\\recorteDeLineas\\";
 //        String aFilePath = fullPath + "sample-one.txt";
-//        String aFilePath = fullPath + "sample-two.txt";
-        String aFilePath = fullPath + "sample-three.txt";
+        String aFilePath = fullPath + "sample-two.txt";
+//        String aFilePath = fullPath + "sample-three.txt";
         aVertexList = ComputerGraphicsRepository.getVertexFromFile(aFilePath);
         aEdgeList = ComputerGraphicsRepository.getEdgesFromFile(aFilePath, aVertexList);
     }
