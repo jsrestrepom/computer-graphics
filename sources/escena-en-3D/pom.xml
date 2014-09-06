@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>co.edu.eafit.dis.jrestr76</groupId>
+    <artifactId>escena-en-3D</artifactId>
+    <version>1.0.0</version>
+
+    <description>
+        Leer la descripción de un objeto 3D desde un archivo texto (mirar el ejemplo de la casita, que se anexa). Poner el observador en el origen, mirando en la dirección -Z. El plano de proyección está en Z = -100. Dibujar la proyección del objeto 3D sobre el plano de proyección.
+    </description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>co.edu.eafit.dis.jrestr76</groupId>
+            <artifactId>computer-graphics-core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>

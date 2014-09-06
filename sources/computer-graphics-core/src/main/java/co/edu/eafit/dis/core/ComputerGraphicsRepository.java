@@ -96,6 +96,35 @@ public class ComputerGraphicsRepository
         return edges;
     }
 
+    public static List<Edge> get3DEdgesFromFile(String aFilePath, List<Point> aVertexList) {
+        Scanner aScanner;
+        try
+        {
+            aScanner = new Scanner(new File(aFilePath));
+        } catch (FileNotFoundException e)
+        {
+            return new LinkedList<Edge>();
+        }
+        jumpToNextSection(aScanner);
+        jumpToNextSection(aScanner);
+        List<Edge> edges = new LinkedList<Edge>();
+        Point initialPoint, finalPoint;
+        try
+        {
+            int nEdges = aScanner.nextInt();
+            for (int i = 0; i < nEdges; i++)
+            {
+                initialPoint = aVertexList.get(aScanner.nextInt());
+                finalPoint = aVertexList.get(aScanner.nextInt());
+                edges.add(new Edge(initialPoint, finalPoint));
+            }
+        } catch (InputMismatchException e)
+        {
+            edges = new LinkedList<Edge>();
+        }
+        return edges;
+    }
+
     private static void jumpToNextSection(Scanner sc) {
         while (!sc.nextLine().contains("----------")) ;
     }

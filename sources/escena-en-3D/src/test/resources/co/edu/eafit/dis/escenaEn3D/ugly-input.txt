@@ -1,0 +1,12 @@
+----------- vertices
+n
+x0 y0 z0
+x1 y1 z1
+...
+xn-1 yn-1 zn-1
+----------- aristas
+m
+vini0 vfin0
+vini1 vfin1
+...
+vinim-1 vfinm-1
