@@ -38,6 +38,35 @@ public class ComputerGraphicsRepository
         return vertex;
     }
 
+    public static List<Point> get3DVertexFromFile(String aFilePath) {
+        Scanner aScanner;
+        try
+        {
+            aScanner = new Scanner(new File(aFilePath));
+        } catch (FileNotFoundException e)
+        {
+            return new LinkedList<Point>();
+        }
+        jumpToNextSection(aScanner);
+        List<Point> vertex = new LinkedList<Point>();
+        int x, y, z;
+        try
+        {
+            int nVertex = aScanner.nextInt();
+            for (int i = 0; i < nVertex; i++)
+            {
+                x = aScanner.nextInt();
+                y = aScanner.nextInt();
+                z = aScanner.nextInt();
+                vertex.add(new Point(x, y, z));
+            }
+        } catch (InputMismatchException e)
+        {
+            vertex = new LinkedList<Point>();
+        }
+        return vertex;
+    }
+
     public static List<Edge> getEdgesFromFile(String aFilePath, List<Point> aVertexList) {
         Scanner aScanner;
         try
