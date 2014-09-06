@@ -41,4 +41,18 @@ public class Point
         return z;
     }
 
+    public boolean equals(Object o)
+    {
+        if (!(o instanceof Point))
+        {
+            return false;
+        }
+        if (o == this)
+        {
+            return true;
+        }
+        Point castPoint = (Point) o;
+        return (this.x == castPoint.getX() && this.y == castPoint.getY() && this.z == castPoint.getZ());
+    }
+
 }
