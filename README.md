@@ -1,0 +1,2 @@
+# computer-graphics
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f51dfa9829484da08cdf0ebc6eff8997)](https://app.codacy.com/app/santyrestrepom/computer-graphics?utm_source=github.com&utm_medium=referral&utm_content=jsrestrepom/computer-graphics&utm_campaign=badger)
